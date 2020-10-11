@@ -25,10 +25,10 @@ test-coverage:
 lint:
 	npx eslint . --ext js,jsx
 
-publish:
-	npm publish
-
 deploy:
 	git push heroku
+
+production-logs:
+	heroku logs --tail
 
 .PHONY: test
