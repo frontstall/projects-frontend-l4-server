@@ -35,7 +35,7 @@ const setUpStaticAssets = (app) => {
 };
 
 export default (options) => {
-  const app = fastify({ logger: true, prettyPrint: true });
+  const app = fastify({ logger: { prettyPrint: true } });
 
   setUpViews(app);
   setUpStaticAssets(app);
