@@ -1,6 +1,8 @@
 ---
 
 plugins:
+  - react
+  - jest
   - functional
 
 extends:
@@ -8,6 +10,8 @@ extends:
   - "plugin:jest/recommended"
   - "plugin:functional/external-recommended"
   - "plugin:functional/recommended"
+  - "plugin:react/recommended"
+  - "plugin:react-hooks/recommended"
 
 parser: babel-eslint
 
