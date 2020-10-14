@@ -1,8 +1,8 @@
 {
-  "name": "frontend_l4_chat_project",
+  "name": "@hexlet/code",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index.js",
+  "main": "src/init.jsx",
   "bin": {
     "slack": "dist/bin/slack.js"
   },
@@ -10,7 +10,7 @@
     "node": ">= 14"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --colors",
     "build-server": "babel server --out-dir dist --source-maps inline && cp -r server/views dist/views",
     "build-app": "npx webpack --env production",
     "build": "npm run build-app && npm run build-server",
